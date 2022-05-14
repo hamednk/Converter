@@ -36,8 +36,8 @@ namespace ConvertCapitalCaseProperties
               .Select(word => !rejectCase.Contains(word) ? char.ToUpper(word[0]) + word.Substring(1) : word)
                   .ToArray();
 
-            return string.Join(" ", words);
-        }
+            return string.Join(" ", words);// output: public string FirstName { get; set; }
+    }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
